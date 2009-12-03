@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'lib/myspeechtime'
 require 'haml'
 
 
@@ -12,7 +13,6 @@ get '/' do
 end
 
 post '/calculate' do
-  #TODO
-  "#{rand(10).to_i} minutes, #{rand(60).to_i} seconds"
+  MySpeechTime::Duration.new(params[:speech][:text]).pretty_time
 end
 

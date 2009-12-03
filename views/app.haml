@@ -15,6 +15,6 @@
       %h2
         be well prepared - pastie your speech below
       %form#speech_form{ :action => 'calculate', :method => 'post' }
-        %textarea{ :name => 'speech[content]' }
+        %textarea{ :name => 'speech[text]' }
         %input#calculate_button{ :type => 'submit', :value => 'How long?' }
       %img#loader{ :src => 'images/loader.gif' }
