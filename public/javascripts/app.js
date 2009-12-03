@@ -14,9 +14,11 @@ window.addEvent('domready', function() {
 
   form.addEvent('submit', function(e) {
     e.preventDefault();
-    $('calculate_button').setStyle('display', 'none');
-    $('loader').setStyle('display', 'inline');
-    $('result').setStyle('visibility', 'hidden');
-    form.send();
+    if(this.getElement('textarea').get('value').trim() != '') {
+      $('calculate_button').setStyle('display', 'none');
+      $('loader').setStyle('display', 'inline');
+      $('result').setStyle('visibility', 'hidden');
+      form.send();
+    }
   });
 });
