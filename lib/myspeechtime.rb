@@ -1,6 +1,6 @@
-require File.expand_path('speech/speech', File.dirname(__FILE__))
-require File.expand_path('duration/duration', File.dirname(__FILE__))
+require 'lib/speech/speech'
+require 'lib/duration/duration'
 
 module MySpeechTime
-  VERSION = '0.1'
+  WPM = 150
 end

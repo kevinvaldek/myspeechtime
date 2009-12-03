@@ -11,5 +11,9 @@ module MySpeechTime
       @text.length
     end
 
+    def words
+      @words ||= @text.split(/\s+/)
+    end
+
   end
 end
