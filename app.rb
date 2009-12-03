@@ -12,6 +12,7 @@ get '/' do
 end
 
 post '/calculate' do
-  
+  #TODO
+  "#{rand(10).to_i} minutes, #{rand(60).to_i} seconds"
 end
 

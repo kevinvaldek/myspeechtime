@@ -11,16 +11,18 @@ body {
 
 #container {
   width: 550px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 }
 
-h1 {
-  
-}
-
-h2 {
-
+#result {
+  visibility: hidden;
+  height: 50px;
+  margin: 30px 0 20px 0;
+  padding-top: 15px;
+  font-size: 1.7em;
+  background: #fff;
+  border: 7px solid #600;
 }
 
 textarea {

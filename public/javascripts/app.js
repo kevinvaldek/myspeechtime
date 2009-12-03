@@ -1,9 +1,14 @@
+
 window.addEvent('domready', function() {
   var form = $('speech_form');
   form.set('send', {
-    onSuccess: function() {
+    onSuccess: function(response) {
       $('loader').setStyle('display', 'none');
       $('calculate_button').setStyle('display', 'inline');
+      $('result').set({
+        html: response,
+        styles: { visibility: 'visible' }
+      });
     }
   });
 
@@ -11,6 +16,7 @@ window.addEvent('domready', function() {
     e.preventDefault();
     $('calculate_button').setStyle('display', 'none');
     $('loader').setStyle('display', 'inline');
+    $('result').setStyle('visibility', 'hidden');
     form.send();
   });
 });
