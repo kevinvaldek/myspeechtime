@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, Helvetica, Arial;
+  color: #300;
+  background: #fffbff;
+}
+
+#container {
+  width: 550px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+h1 {
+  
+}
+
+h2 {
+
+}
+
+textarea {
+  width: 520px;
+  height: 400px;
+  margin: 20px 0 10px 0;
+  padding: 5px;
+  font-size: 1.5em;
+  border: 10px solid #300;
+  background: #ffffff;
+}
+
+textarea:focus {
+  background: #fff9c4;
+}
+
+#calculate_button {
+  width: 200px;
+  height: 50px;
+  font-size: 2em;
+}
+
+#loader {
+  display: none;
+}

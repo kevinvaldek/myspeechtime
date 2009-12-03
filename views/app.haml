@@ -3,6 +3,16 @@
   %head
     %title
       MySpeechTime - How long is your speech?
+    %link{ :rel => 'stylesheet', :href => 'css/app.css' }
+    %script{ :type => 'text/javascript', :src => 'javascripts/mootools-1.2.4-core-yc.js' }
+    %script{ :type => 'text/javascript', :src => 'javascripts/app.js' }
   %body
-    %h1
-      Hello!
+    #container
+      %h1
+        Big speech coming up
+      %h2
+        be well preared - pastie your speech below
+      %form#speech_form{ :action => 'calculate', :method => 'post' }
+        %textarea{ :name => 'speech[content]' }
+        %input#calculate_button{ :type => 'submit', :value => 'How long?' }
+      %img#loader{ :src => 'images/loader.gif' }

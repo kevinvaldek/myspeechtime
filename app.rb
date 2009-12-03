@@ -11,3 +11,7 @@ get '/' do
   haml :app
 end
 
+post '/calculate' do
+  
+end
+
