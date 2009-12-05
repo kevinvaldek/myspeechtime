@@ -21,8 +21,11 @@ body {
   margin: 30px 0 20px 0;
   padding-top: 15px;
   font-size: 1.7em;
-  background: #fff;
+  color: #fff;
+  background: #600;
   border: 7px solid #600;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
 }
 
 textarea {
@@ -33,10 +36,13 @@ textarea {
   font-size: 1.5em;
   border: 10px solid #300;
   background: #ffffff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 textarea:focus {
   background: #fff9c4;
+  outline-style: none;
 }
 
 #calculate_button {
