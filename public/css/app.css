@@ -9,6 +9,15 @@ body {
   background: #fffbff;
 }
 
+iframe {
+  float: left;
+  margin: 5px 0 0 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
 #container {
   width: 550px;
   margin: 0 auto;
