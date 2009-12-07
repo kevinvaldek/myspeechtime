@@ -9,7 +9,7 @@ set :use_sudo, false
 default_run_options[:pty] = true
 
 set :scm, "git"
-set :repository, "ssh://cannedapps.com/var/git/myspeechtime.git"
+set :repository, "git@github.com:kevinvaldek/myspeechtime.git"
 set :branch, "master"
 
 namespace :deploy do
