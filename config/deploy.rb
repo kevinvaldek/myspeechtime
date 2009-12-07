@@ -1,4 +1,4 @@
-set :application, "myspeechtime.cannedapps.com"
+set :application, "myspeechtime.com"
 role :app, application
 role :web, application
 role :db, application, :primary => true
