@@ -3,6 +3,7 @@
   %head
     %title
       MySpeechTime - How long is your speech?
+    %meta{ :name => 'description', :content => 'How long time does your speech take? Paste your speech and get the figures.' }
     %link{ :rel => 'stylesheet', :href => 'css/app.css' }
     %script{ :type => 'text/javascript', :src => 'javascripts/mootools-1.2.4-core-yc.js' }
     %script{ :type => 'text/javascript', :src => 'javascripts/app.js' }
@@ -19,6 +20,8 @@
         %textarea{ :name => 'speech[text]' }
         %input#calculate_button{ :type => 'submit', :value => 'How long?' }
       %img#loader{ :src => 'images/loader.gif' }
+      #disclaimer
+        MySpeechTime does not guarantee that the result is accurate, at all.
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
