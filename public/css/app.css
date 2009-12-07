@@ -39,7 +39,7 @@ h2 {
 
 textarea {
   width: 520px;
-  height: 400px;
+  height: 300px;
   margin: 20px 0 10px 0;
   padding: 5px;
   font-size: 1.5em;
@@ -57,6 +57,7 @@ textarea:focus {
 #calculate_button {
   width: 200px;
   height: 50px;
+  margin-bottom: 20px;
   font-size: 2em;
 }
 
